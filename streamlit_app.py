@@ -6,7 +6,10 @@ import os
 
 model_path = "/workspaces/fashion_mnist/trained_fashion_mnist.h5"
 # Load the pre-trained model
-model = tf.keras.models.load_model(model_path)
+custom_objects = {
+    'SparseCategoricalCrossentropy': tf.keras.losses.SparseCategoricalCrossentropy
+}
+model = tf.keras.models.load_model(model_path,custom_objects=custom_objects)
 
 # Define class labels for Fashion MNIST dataset
 class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
