@@ -1,6 +1,6 @@
-# Blank app template
+# Fashion Detect 
 
-Fashion detection model. It predict the class of given dress
+It is a Fashion detection model trained using the build-in dataset Fashion_mnist.It is one dimensional dataset(i.e grayscale)
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
 
