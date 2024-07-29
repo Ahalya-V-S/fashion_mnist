@@ -25,12 +25,6 @@ def preprocess_image(image):
 # Streamlit App
 st.title('Fashion Item Classifier')
 
-
-# Set a header
-st.header("This is a Header")
-
-# Set a subheader
-st.subheader("This is a Subheader")
 uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
 
 if uploaded_image is not None:
