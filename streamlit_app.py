@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 import os
 
-model_path = "/workspaces/fashion_mnist/trained_fashion_mnist_model.h5"
+model_path = "/workspaces/fashion_mnist/trained_fashion_mnist.h5"
 # Load the pre-trained model
 model = tf.keras.models.load_model(model_path)
 
